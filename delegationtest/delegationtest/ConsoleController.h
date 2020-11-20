@@ -1,7 +1,7 @@
 #pragma once
 #include "olcConsoleGameEngine.h"
 #include "Specs.h"
-#include "Updater.h"
+#include "Scene.h"
 
 namespace RB
 {
@@ -9,19 +9,18 @@ namespace RB
 	{
 	private:
 		Specs specs;
-		Updater* updater = nullptr;
+		Scene scene;
 
 		bool OnUserCreate() override
 		{
+			m_sAppName = L"testing";
+
 			return true;
 		}
 
 		bool OnUserUpdate(float fElapsedTime) override
 		{
-			if (updater != nullptr)
-			{
-				updater->Update();
-			}
+			scene.Update();
 
 			Fill(0, 0, specs.WidthCount, specs.HeightCount, PIXEL_SOLID, FG_WHITE);
 			Fill(0, 0, 1, 1, PIXEL_SOLID, FG_GREEN);
@@ -29,14 +28,6 @@ namespace RB
 			return true;
 		}
 	public:
-		void SetUpdater(Updater &targetUpdater)
-		{
-			updater = &targetUpdater;
-			updater->SetBuffer(m_bufScreen);
-
-			m_sAppName = L"testing";
-		}
-
 		void Create()
 		{
 			ConstructConsole(
@@ -44,6 +35,7 @@ namespace RB
 				specs.HeightCount,
 				specs.PixelsPerSquare,
 				specs.PixelsPerSquare);
+
 			Start();
 		}
 	};

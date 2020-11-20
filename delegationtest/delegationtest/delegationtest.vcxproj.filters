@@ -15,25 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="delegationtest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="olcConsoleGameEngine.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Setup.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Specs.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Updater.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="ConsoleController.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="GridObj.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GridGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
