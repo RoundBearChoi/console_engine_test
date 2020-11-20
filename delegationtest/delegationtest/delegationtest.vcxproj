@@ -146,7 +146,8 @@
     <ClInclude Include="olcConsoleGameEngine.h" />
     <ClInclude Include="Setup.h" />
     <ClInclude Include="Specs.h" />
-    <ClInclude Include="WindowCreator.h" />
+    <ClInclude Include="Updater.h" />
+    <ClInclude Include="ConsoleController.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

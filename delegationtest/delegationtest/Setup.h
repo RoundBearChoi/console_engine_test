@@ -1,18 +1,19 @@
 #pragma once
-#include "WindowCreator.h"
+#include "ConsoleController.h"
 
 namespace RB
 {
 	class Setup
 	{
 	private:
-		WindowCreator windowCreator;
-		Specs specs;
+		ConsoleController consoleController;
+		Updater updater;
 
 	public:
 		void Start()
 		{
-			windowCreator.Create(specs);
+			consoleController.SetUpdater(updater);
+			consoleController.Create();
 		}
 	};
 }

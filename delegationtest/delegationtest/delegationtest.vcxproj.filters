@@ -26,10 +26,13 @@
     <ClInclude Include="Setup.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="WindowCreator.h">
+    <ClInclude Include="Specs.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Specs.h">
+    <ClInclude Include="Updater.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleController.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
